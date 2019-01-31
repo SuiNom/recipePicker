@@ -2,9 +2,12 @@ import random
 import pprint 
 #Define Recipes as a dictionary nested in a list.
 recipes = [
-	{"Meatballs and Pasta:": ["Meatballs", "Pasta", "Pasta Sauce"]},
-	{"Fried Chicken:": ["Chicken Breast", "Buttermilk", "Seasoning"]},
-	{"Dish 3:": ["Ingredient 1", "Ingredient 2", "Ingredient 3"]}	
+	{"Meatballs and Pasta:": 
+	 	["Meatballs", "Pasta", "Pasta Sauce"]},
+	{"Fried Chicken:": 
+	 	["Chicken Breast", "Buttermilk", "Seasoning"]},
+	{"Dish 3:": 
+	 	["Ingredient 1", "Ingredient 2", "Ingredient 3"]}	
 	]
 
 #Prints all dishes from the "recipes" variable
