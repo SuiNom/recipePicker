@@ -1,13 +1,18 @@
 import random
 import pprint 
-#Define Recipes as a dictionary nested in a list.
+#Define Recipes as a dictionary nested in a list
+
+##Variable - Python List of recipes
+###Dictionary
+####Key = Dish Name 
+#####Value = Python List of ingredients
 recipes = [
-	{"Meatballs and Pasta:": 
-	 	["Meatballs", "Pasta", "Pasta Sauce"]},
-	{"Fried Chicken:": 
-	 	["Chicken Breast", "Buttermilk", "Seasoning"]},
-	{"Dish 3:": 
-	 	["Ingredient 1", "Ingredient 2", "Ingredient 3"]}	
+	{"Meatballs and Pasta": 
+		["Meatballs", "Pasta", "Pasta Sauce"]},
+	{"Fried Chicken": 
+		["Chicken Breast", "Buttermilk", "Seasoning"]},
+	{"Dish 3": 
+		["Ingredient 1", "Ingredient 2", "Ingredient 3"]}	
 	]
 
 #Prints all dishes from the "recipes" variable
@@ -29,7 +34,16 @@ def pickDish(sampleSize):
 
 if __name__ == "__main__":
 	#print(pickDish(2))
-	pprint.pprint(pickDish(2), width=1)
+
+	#pprint.pprint(pickDish(2), width=1)
+
+	str1 = pickDish(1)
+	print(str1) #print raw string
+	#this doesn't work, strip only works on begining and ends of strings - print(str(str1).strip("([{}])"))
+	print(str(str1).translate(None, "([{'}])")) #Works!
+
+	
+
 	#printDishes()
 	#print("===Dish Picks===")
 	#print(pickDish(1))
@@ -37,3 +51,4 @@ if __name__ == "__main__":
 	#print(pickDish(2))
 	#print("===Dish Picks===")
 	#print(pickDish(3))
+	#print(str(pickDish(2))
